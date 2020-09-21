@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b2cc818e3f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Filip Johansson Portfolio</title>
+  </head>
+  <body>
+    <!--Header-start-->
+    <header class="v-header container">
+      <div class="fullscreen-video-wrap">
+        <video muted src="source/img/bakgrundsbild.mp4" autoplay loop></video>
+      </div>
+      <div class="header-overlay"></div>
+      <div class="header-content text-md-center">
+        <h1>Hello, I'm <span class="highlight">Filip Johansson</span></h1>
+        <h2>
+          I'm a full-stack web developer <br />
+          studying at
+          <span class="highlight">Chas Academy</span>
+        </h2>
+        <div class="btn">
+          View my work
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </div>
+    </header>
+
+    <!--Nav-bar-start-->
+
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects-del">PORTFOLIO</a></li>
+        <li><a href="#contact-footer">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <!--Main-about-me-->
+
+    <main>
+      <h2 id="about">ABOUT</h2>
+      <section class="about-me">
+        <img
+          class="images-of-myself"
+          src="source/img/pic-on-myself.jpg"
+          alt="images of myself"
+        />
+        <h2>Who is this <span class="highlight">Guy?</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+          illum, reiciendis nisi distinctio ex temporibus quam pariatur ipsam
+          expedita eligendi non placeat repellendus, aspernatur autem eos fugiat
+          inventore omnis nihil?
+        </p>
+        <!-- <embed src="testar.pdf" type="application/pdf" /> -->
+      </section>
+      <section class="flex-layout-about">
+        <div>
+          <i class="fas fa-tachometer-alt"></i>
+          <h2>Fast</h2>
+          <p>Fast load times is one of my highest priority.</p>
+        </div>
+        <div>
+          <i class="fas fa-mobile"></i>
+          <h2 class="">Responsive</h2>
+          <p>I strive to make my layout work on any device.</p>
+        </div>
+        <div>
+          <i class="fas fa-drafting-compass"></i>
+          <h2>Intuitive</h2>
+          <p>Strong preference for easy to use, intuitive UX/UI.</p>
+        </div>
+      </section>
+    </main>
+
+    <!--Portfolio-->
+
+    <header>
+      <h2 id="projects-del" class="projects">PROJECTS</h2>
+    </header>
+
+    <section id="portfolio-parent">
+      <div class="card">
+        <h3>coffee shop</h3>
+
+        <div class="visual">
+          <a href="#projects-del">
+            <img
+              src="https://images.pexels.com/photos/1070945/pexels-photo-1070945.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              alt="coffee shop"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>supermarket webbpage</h3>
+
+        <div class="visual">
+          <a href="#projects-del">
+            <img
+              src="https://images.pexels.com/photos/2733918/pexels-photo-2733918.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              alt="img of supermarket"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>spotify clone</h3>
+
+        <div class="visual">
+          <a href="#projects-del">
+            <img
+              src="https://images.pexels.com/photos/374912/pexels-photo-374912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              alt="musik"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Bakery webbpage</h3>
+
+        <div class="visual">
+          <a href="#projects-del">
+            <img
+              src="https://images.pexels.com/photos/9095/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              alt="Bakery"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <!--Embed section-->
+    <section class="embed-section">
+      <h3>Figma sketch for projekt <span class="highlight">Portfolio</span></h3>
+      <div>
+        <!--Pdf saved on personal googel drive-->
+        <embed
+          src="https://drive.google.com/file/d/1SKFloEuC-Sx_G7gA9h40Gl-svJ9SWoc9/preview"
+          type="application/pdf"
+        />
+      </div>
+    </section>
+
+    <!--Footer-->
+
+    <footer id="contact-footer">
+      <div class="contact">
+        <h2>
+          Have any questions? Or want to get in touch. <br />
+          Contact me here!
+        </h2>
+        <form>
+          <div>
+            <label for="name">
+              <input id="name" type="text" placeholder="Name" required />
+            </label>
+          </div>
+          <div>
+            <label for="email"
+              ><input id="email" type="text" placeholder="Enter email" required
+            /></label>
+          </div>
+          <div>
+            <textarea
+              name="textarea"
+              id="Text-area"
+              placeholder="Your message"
+              required
+              maxlength="500"
+            ></textarea>
+          </div>
+          <input class="submit-btn" type="submit" value="Submit" />
+        </form>
+      </div>
+
+      <div class="footer-info">
+        <ul>
+          <li>
+            <a href="https://github.com/Fijo-Lurk" target="_blank"
+              ><i class="fab fa-github-square"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/filip-johansson-31b9b51b6/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/jjohanssonfilip/" target="_blank"
+              ><i class="fab fa-instagram-square"></i
+            ></a>
+          </li>
+        </ul>
+        <p>Filip Johansson 2020©</p>
+      </div>
+    </footer>
+  </body>
+</html>

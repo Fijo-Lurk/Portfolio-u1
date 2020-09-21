@@ -1,0 +1,32 @@
+.footer-info {
+  background-color: #121213;
+  ul {
+    font-size: 3rem;
+    width: 100%;
+    margin: 0;
+    padding: 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    li {
+      margin-top: 1rem;
+      padding: 0 2rem 0 2rem;
+    }
+  }
+  .fab {
+    transition-duration: 350ms;
+    color: rgb(79, 78, 78);
+  }
+  .fab:hover {
+    color: #e31b6d;
+  }
+  p {
+    color: gray;
+    font-weight: lighter;
+    text-align: center;
+    padding-bottom: 2rem;
+    margin: 1rem 0 0 0;
+  }
+}

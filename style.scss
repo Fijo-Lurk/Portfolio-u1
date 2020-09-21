@@ -1,0 +1,125 @@
+//layout
+@import "source/Sass/layout/nav/_nav.scss";
+@import "source/sass/layout/Header/header.scss";
+@import "source/sass/layout/Main-about-me/about-me.scss";
+@import "source/sass/layout/contact/contact.scss";
+@import "source/sass/layout/portfolio/portfolio.scss";
+@import "source/sass/layout/footer/_footer.scss";
+
+//Variables
+@import "source/variables/_variables.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  overflow-x: hidden;
+  background-color: #1b242f;
+}
+
+/*-----------------@media-----------------------*/
+@media screen and (min-width: 1500px) {
+  .header-content h1 {
+    font-size: 4rem;
+  }
+  .header-content h2 {
+    font-size: 4rem;
+  }
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header-content h1 {
+    font-size: 1.9rem;
+  }
+  .header-content h2 {
+    font-size: 1.9rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .container {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+  .nav-bar ul {
+    font-size: 0.8rem;
+  }
+  #portfolio-parent a img {
+    width: 200px;
+    height: 200px;
+  }
+  .embed-section embed {
+    width: 30rem;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 565px) {
+  .header-content h1 {
+    font-size: 1.2rem;
+  }
+  .header-content h2 {
+    font-size: 1.2rem;
+  }
+  .btn {
+    font-size: 0.6rem;
+    padding: 7.5px;
+  }
+
+  .nav-bar ul {
+    width: 100%;
+  }
+  .flex-layout-about p {
+    font-size: 0.8rem;
+  }
+  .flex-layout-about h2 {
+    font-size: 1rem;
+  }
+  .btn-footer {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .card {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .btn {
+    font-size: 0.6rem;
+    padding: 7.5px;
+  }
+  main .fas {
+    font-size: 3rem;
+    margin: 0.4rem;
+  }
+  .contact h2 {
+    font-size: 1rem;
+  }
+  .card {
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
+  #portfolio-parent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .card {
+      height: 300px;
+
+      h3 {
+        padding: 0.2rem;
+      }
+    }
+  }
+}
