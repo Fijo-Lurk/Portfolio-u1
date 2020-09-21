@@ -1,13 +1,14 @@
+@import "source/variables/_variables.scss";
+
 //layout
 @import "source/Sass/layout/nav/_nav.scss";
-@import "source/sass/layout/Header/header.scss";
-@import "source/sass/layout/Main-about-me/about-me.scss";
+@import "source/sass/layout/header/header.scss";
+@import "source/sass/layout/main-about-me/about-me.scss";
 @import "source/sass/layout/contact/contact.scss";
 @import "source/sass/layout/portfolio/portfolio.scss";
 @import "source/sass/layout/footer/_footer.scss";
 
 //Variables
-@import "source/variables/_variables.scss";
 
 * {
   box-sizing: border-box;

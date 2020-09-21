@@ -28,10 +28,11 @@
           studying at
           <span class="highlight">Chas Academy</span>
         </h2>
-        <div class="btn">
-          View my work
-          <i class="fas fa-arrow-right"></i>
-        </div>
+        <a href="#projects-del">
+          <button class="btn">
+            View my work
+            <i class="fas fa-arrow-down"></i></button
+        ></a>
       </div>
     </header>
 
@@ -48,13 +49,13 @@
 
     <!--Main-about-me-->
 
-    <main>
+    <main aria-label="main information">
       <h2 id="about">ABOUT</h2>
       <section class="about-me">
         <img
           class="images-of-myself"
           src="source/img/pic-on-myself.jpg"
-          alt="images of myself"
+          alt="img of myself"
         />
         <h2>Who is this <span class="highlight">Guy?</span></h2>
         <p>
@@ -63,7 +64,6 @@
           expedita eligendi non placeat repellendus, aspernatur autem eos fugiat
           inventore omnis nihil?
         </p>
-        <!-- <embed src="testar.pdf" type="application/pdf" /> -->
       </section>
       <section class="flex-layout-about">
         <div>
@@ -90,27 +90,33 @@
       <h2 id="projects-del" class="projects">PROJECTS</h2>
     </header>
 
-    <section id="portfolio-parent">
+    <section role="portfolio section" id="portfolio-parent">
       <div class="card">
         <h3>coffee shop</h3>
 
         <div class="visual">
-          <a href="#projects-del">
+          <a
+            href="#projects-del"
+            aria-label="read more about my coffe shop project"
+          >
             <img
               src="https://images.pexels.com/photos/1070945/pexels-photo-1070945.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-              alt="coffee shop"
+              alt=" link to coffee shop page"
             />
           </a>
         </div>
       </div>
       <div class="card">
-        <h3>supermarket webbpage</h3>
+        <h3>supermarket</h3>
 
         <div class="visual">
-          <a href="#projects-del">
+          <a
+            href="#projects-del"
+            aria-label="read more about my supermarket shop project"
+          >
             <img
               src="https://images.pexels.com/photos/2733918/pexels-photo-2733918.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-              alt="img of supermarket"
+              alt="link to supermarket page"
             />
           </a>
         </div>
@@ -119,10 +125,13 @@
         <h3>spotify clone</h3>
 
         <div class="visual">
-          <a href="#projects-del">
+          <a
+            href="#projects-del"
+            aria-label="read more about my musik webpage project"
+          >
             <img
               src="https://images.pexels.com/photos/374912/pexels-photo-374912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-              alt="musik"
+              alt="link to musik page"
             />
           </a>
         </div>
@@ -131,7 +140,10 @@
         <h3>Bakery webbpage</h3>
 
         <div class="visual">
-          <a href="#projects-del">
+          <a
+            href="#projects-del"
+            aria-label="read more about my bakery webpage project"
+          >
             <img
               src="https://images.pexels.com/photos/9095/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               alt="Bakery"
@@ -141,11 +153,12 @@
     </section>
 
     <!--Embed section-->
-    <section class="embed-section">
-      <h3>Figma sketch for projekt <span class="highlight">Portfolio</span></h3>
+    <section role="figma sketch pdf" class="embed-section">
+      <h3>Figma sketch for project <span class="highlight">Portfolio</span></h3>
       <div>
         <!--Pdf saved on personal googel drive-->
         <embed
+          aria-label="pdf for figma sketch"
           src="https://drive.google.com/file/d/1SKFloEuC-Sx_G7gA9h40Gl-svJ9SWoc9/preview"
           type="application/pdf"
         />
@@ -163,16 +176,28 @@
         <form>
           <div>
             <label for="name">
-              <input id="name" type="text" placeholder="Name" required />
+              <input
+                aria-labelledby="name"
+                id="name"
+                type="text"
+                placeholder="Name"
+                required
+              />
             </label>
           </div>
           <div>
             <label for="email"
-              ><input id="email" type="text" placeholder="Enter email" required
+              ><input
+                aria-labelledby="email"
+                id="email"
+                type="text"
+                placeholder="Enter email"
+                required
             /></label>
           </div>
           <div>
             <textarea
+              aria-labelledby="Text-area"
               name="textarea"
               id="Text-area"
               placeholder="Your message"
@@ -187,23 +212,36 @@
       <div class="footer-info">
         <ul>
           <li>
-            <a href="https://github.com/Fijo-Lurk" target="_blank"
+            <a
+              aria-label="link to my github"
+              href="https://github.com/Fijo-Lurk"
+              target="_blank"
               ><i class="fab fa-github-square"></i
             ></a>
           </li>
           <li>
             <a
+              aria-label="link to my linkedin"
               href="https://www.linkedin.com/in/filip-johansson-31b9b51b6/"
               target="_blank"
               ><i class="fab fa-linkedin"></i
             ></a>
           </li>
           <li>
-            <a href="https://www.instagram.com/jjohanssonfilip/" target="_blank"
+            <a
+              aria-label="link to my instagram"
+              href="https://www.instagram.com/jjohanssonfilip/"
+              target="_blank"
               ><i class="fab fa-instagram-square"></i
             ></a>
           </li>
+          <li>
+            <a role="link to top of the page" href="#"
+              ><i class="fas fa-arrow-circle-up"></i
+            ></a>
+          </li>
         </ul>
+
         <p>Filip Johansson 2020©</p>
       </div>
     </footer>

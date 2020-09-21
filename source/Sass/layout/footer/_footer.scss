@@ -1,5 +1,5 @@
 .footer-info {
-  background-color: #121213;
+  background-color: $footercolor;
   ul {
     font-size: 3rem;
     width: 100%;
@@ -17,10 +17,16 @@
   }
   .fab {
     transition-duration: 350ms;
-    color: rgb(79, 78, 78);
+    color: $iconecolor;
   }
   .fab:hover {
-    color: #e31b6d;
+    color: $highlights;
+  }
+  .fas {
+    color: $iconecolor;
+  }
+  .fas:hover {
+    color: $highlights;
   }
   p {
     color: gray;
