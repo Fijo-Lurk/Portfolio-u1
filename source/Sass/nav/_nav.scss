@@ -2,7 +2,7 @@
   background-color: #1b242f;
   margin: 0;
   padding: 0;
-  border-bottom: 3px solid #04c2c9;
+  border-bottom: 3px solid $img-border-color;
   ul {
     background-color: #1b242f;
     height: 3rem;
@@ -21,6 +21,6 @@
     color: white;
   }
   a:hover {
-    color: #e31b6d;
+    color: $highlights;
   }
 }

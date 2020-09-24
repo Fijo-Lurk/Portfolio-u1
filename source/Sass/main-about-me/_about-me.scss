@@ -1,9 +1,9 @@
 main {
   background-color: white;
   padding-bottom: 3rem;
-  border-bottom: solid 3px #04c2c9;
+  border-bottom: solid 3px $img-border-color;
   .fas {
-    color: #04c2c9;
+    color: $img-border-color;
     font-size: 5rem;
   }
   h2 {
@@ -39,7 +39,8 @@ main {
 
 .about-me {
   margin: 0 auto;
-  max-width: 1200px;
+
+  max-width: 65ch;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -51,7 +52,7 @@ main {
     text-align: center;
     padding-bottom: 2rem;
     padding: 1rem;
-    max-width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }

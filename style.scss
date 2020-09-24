@@ -1,12 +1,12 @@
 @import "source/variables/_variables.scss";
 
 //layout
-@import "source/Sass/layout/nav/_nav.scss";
-@import "source/sass/layout/header/header.scss";
-@import "source/sass/layout/main-about-me/about-me.scss";
-@import "source/sass/layout/contact/contact.scss";
-@import "source/sass/layout/portfolio/portfolio.scss";
-@import "source/sass/layout/footer/_footer.scss";
+@import "source/Sass/nav/_nav.scss";
+@import "source/sass/header/header.scss";
+@import "source/sass/main-about-me/about-me.scss";
+@import "source/sass/contact/contact.scss";
+@import "source/sass/portfolio/portfolio.scss";
+@import "source/sass/footer/_footer.scss";
 
 //Variables
 
@@ -20,11 +20,17 @@ body {
   font-weight: 300;
   line-height: 1.5;
   overflow-x: hidden;
-  background-color: #1b242f;
+  background-color: $background-color;
 }
 
 /*-----------------@media-----------------------*/
 @media screen and (min-width: 1500px) {
+  .nav-bar {
+    ul {
+      height: 5rem;
+      font-size: 1.5rem;
+    }
+  }
   .header-content h1 {
     font-size: 4rem;
   }
@@ -33,6 +39,14 @@ body {
   }
   .btn {
     font-size: 1.5rem;
+  }
+  main {
+    h2 {
+      font-size: 4rem;
+    }
+    p {
+      font-size: 1.6rem;
+    }
   }
 }
 
@@ -63,13 +77,13 @@ body {
 }
 @media screen and (max-width: 565px) {
   .header-content h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .header-content h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .btn {
-    font-size: 0.6rem;
+    font-size: 1rem;
     padding: 7.5px;
   }
 
@@ -94,8 +108,14 @@ body {
 }
 
 @media screen and (max-width: 425px) {
+  .header-content h1 {
+    font-size: 1.3rem;
+  }
+  .header-content h2 {
+    font-size: 1.3rem;
+  }
   .btn {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     padding: 7.5px;
   }
   main .fas {

@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is my own build portfolio website, using only HTML and CSS"
+    />
+    <meta name="author" content="Filip Johansson" />
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/b2cc818e3f.js"
@@ -20,19 +25,16 @@
       <div class="fullscreen-video-wrap">
         <video muted src="source/img/bakgrundsbild.mp4" autoplay loop></video>
       </div>
-      <div class="header-overlay"></div>
+      <div id="webdev" class="header-overlay"></div>
       <div class="header-content text-md-center">
         <h1>Hello, I'm <span class="highlight">Filip Johansson</span></h1>
-        <h2>
-          I'm a full-stack web developer <br />
-          studying at
-          <span class="highlight">Chas Academy</span>
-        </h2>
-        <a href="#projects-del">
-          <button class="btn">
-            View my work
-            <i class="fas fa-arrow-down"></i></button
-        ></a>
+        <h2>I'm a full-stack web developer</h2>
+        <h2>studying at <span class="highlight">Chas Academy</span></h2>
+
+        <button onclick="window.location.href= '#projects-del';" class="btn">
+          View my work
+          <i class="fas fa-arrow-down"></i>
+        </button>
       </div>
     </header>
 
@@ -49,7 +51,7 @@
 
     <!--Main-about-me-->
 
-    <main aria-label="main information">
+    <main tabindex="0" aria-label="main information">
       <h2 id="about">ABOUT</h2>
       <section class="about-me">
         <h2>Who is this <span class="highlight">Guy?</span></h2>
@@ -90,12 +92,13 @@
       <h2 id="projects-del" class="projects">PROJECTS</h2>
     </header>
 
-    <section role="portfolio section" id="portfolio-parent">
+    <section role="complementary" id="portfolio-parent">
       <div class="card">
         <h3>coffee shop</h3>
 
         <div class="visual">
           <a
+            rel="noopener"
             href="#projects-del"
             aria-label="read more about my coffe shop project"
           >
@@ -111,6 +114,7 @@
 
         <div class="visual">
           <a
+            rel="noopener"
             href="#projects-del"
             aria-label="read more about my supermarket shop project"
           >
@@ -126,6 +130,7 @@
 
         <div class="visual">
           <a
+            rel="noopener"
             href="#projects-del"
             aria-label="read more about my musik webpage project"
           >
@@ -141,6 +146,7 @@
 
         <div class="visual">
           <a
+            rel="noopener"
             href="#projects-del"
             aria-label="read more about my bakery webpage project"
           >
@@ -153,11 +159,12 @@
     </section>
 
     <!--Embed section-->
-    <section role="figma sketch pdf" class="embed-section">
+    <section tabindex="0" class="embed-section">
       <h3>Figma sketch for project <span class="highlight">Portfolio</span></h3>
       <div>
         <!--Pdf saved on personal googel drive-->
         <embed
+          tabindex="0"
           aria-label="pdf for figma sketch"
           src="https://drive.google.com/file/d/1SKFloEuC-Sx_G7gA9h40Gl-svJ9SWoc9/preview"
           type="application/pdf"
@@ -174,37 +181,36 @@
           Contact me here!
         </h2>
         <form>
-          <div>
-            <label for="name">
-              <input
-                aria-labelledby="name"
-                id="name"
-                type="text"
-                placeholder="Name"
-                required
-              />
-            </label>
-          </div>
-          <div>
-            <label for="email"
-              ><input
-                aria-labelledby="email"
-                id="email"
-                type="text"
-                placeholder="Enter email"
-                required
-            /></label>
-          </div>
-          <div>
-            <textarea
-              aria-labelledby="Text-area"
-              name="textarea"
-              id="Text-area"
-              placeholder="Your message"
+          <label for="name">
+            <input
+              aria-labelledby="name"
+              id="name"
+              type="text"
+              placeholder="Name"
               required
-              maxlength="500"
-            ></textarea>
-          </div>
+            />
+          </label>
+
+          <label for="email">
+            <input
+              type="email"
+              aria-labelledby="email"
+              id="email"
+              placeholder="Enter email"
+              required
+            />
+          </label>
+
+          <textarea
+            aria-labelledby="Text-area"
+            name="textarea"
+            id="Text-area"
+            placeholder="Your message"
+            required
+            maxlength="500"
+          >
+          </textarea>
+
           <input class="submit-btn" type="submit" value="Submit" />
         </form>
       </div>
@@ -213,6 +219,7 @@
         <ul>
           <li>
             <a
+              rel="noopener"
               aria-label="link to my github"
               href="https://github.com/Fijo-Lurk"
               target="_blank"
@@ -221,6 +228,7 @@
           </li>
           <li>
             <a
+              rel="noopener"
               aria-label="link to my linkedin"
               href="https://www.linkedin.com/in/filip-johansson-31b9b51b6/"
               target="_blank"
@@ -229,6 +237,7 @@
           </li>
           <li>
             <a
+              rel="noopener"
               aria-label="link to my instagram"
               href="https://www.instagram.com/jjohanssonfilip/"
               target="_blank"
@@ -236,7 +245,7 @@
             ></a>
           </li>
           <li>
-            <a role="link to top of the page" href="#"
+            <a rel="noopener" role="button" aria-label="button" href="#webdev"
               ><i class="fas fa-arrow-circle-up"></i
             ></a>
           </li>
