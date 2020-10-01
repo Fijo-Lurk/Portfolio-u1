@@ -12,7 +12,13 @@
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    transition: width 230ms ease-in-out;
+    transition-property: height, width;
+    transition-duration: 200ms;
+    transition-delay: 200ms;
+  }
+  img:hover {
+    height: 320px;
+    width: 320px;
   }
 }
 
@@ -44,7 +50,7 @@
 }
 
 .embed-section {
-  margin: 2rem;
+  margin-bottom: 2rem;
   div {
     display: flex;
   }
