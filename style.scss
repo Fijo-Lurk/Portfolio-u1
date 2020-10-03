@@ -1,12 +1,12 @@
 @import "source/variables/_variables.scss";
 
 //layout
-@import "source/Sass/nav/_nav.scss";
-@import "source/sass/header/header.scss";
-@import "source/sass/main-about-me/about-me.scss";
-@import "source/sass/contact/contact.scss";
-@import "source/sass/portfolio/portfolio.scss";
-@import "source/sass/footer/_footer.scss";
+@import "source/Sass/_nav.scss";
+@import "source/sass/header.scss";
+@import "source/sass/about-me.scss";
+@import "source/sass/contact.scss";
+@import "source/sass/portfolio.scss";
+@import "source/sass/_footer.scss";
 
 //Variables
 
@@ -72,6 +72,11 @@ body {
     width: 200px;
     height: 200px;
   }
+  #portfolio-parent a img:hover {
+    width: 220px;
+    height: 220px;
+  }
+
   .embed-section embed {
     width: 30rem;
     height: 400px;

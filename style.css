@@ -458,6 +458,10 @@ body {
     width: 200px;
     height: 200px;
   }
+  #portfolio-parent a img:hover {
+    width: 220px;
+    height: 220px;
+  }
   .embed-section embed {
     width: 30rem;
     height: 400px;
