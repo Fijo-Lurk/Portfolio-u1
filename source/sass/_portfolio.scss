@@ -1,0 +1,70 @@
+#portfolio-parent {
+  max-width: 1400px;
+  height: 800px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    transition-property: height, width;
+    transition-duration: 200ms;
+    transition-delay: 200ms;
+  }
+  img:hover {
+    height: 320px;
+    width: 320px;
+  }
+}
+
+.visual {
+  display: inline-block;
+  a {
+    cursor: pointer;
+  }
+}
+
+.card {
+  color: rgba(0, 0, 0, 0.789);
+  text-align: center;
+  width: 100%;
+  align-content: center;
+  border-radius: 50%;
+  height: 350px;
+  h3 {
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    margin: 1rem;
+  }
+}
+.projects {
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.embed-section {
+  margin-bottom: 2rem;
+  div {
+    display: flex;
+  }
+  embed {
+    margin: 0 auto;
+    height: 400px;
+    width: 45rem;
+    border: 1px solid black;
+  }
+  h3 {
+    font-size: 1.5rem;
+    margin: 0 0.5rem 2rem 0.5rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+  }
+}

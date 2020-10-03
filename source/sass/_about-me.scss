@@ -1,0 +1,65 @@
+main {
+  background-color: white;
+  padding-bottom: 3rem;
+  border-bottom: solid 3px $img-border-color;
+  .fas {
+    color: $img-border-color;
+    font-size: 5rem;
+  }
+  h2 {
+    margin: 0;
+    padding: 3rem 0 3rem 0;
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(61, 61, 61);
+  }
+}
+.flex-layout-about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 4rem;
+  div {
+    margin: 0.8rem;
+    text-align: center;
+  }
+  p {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: lighter;
+  }
+  h2 {
+    font-size: 1.6rem;
+    margin: 1rem 0 0;
+    padding: 0;
+  }
+}
+
+.about-me {
+  margin: 0 auto;
+  max-width: 65ch;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    padding: 0;
+    font-size: 2rem;
+  }
+  p {
+    text-align: center;
+    padding-bottom: 2rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.images-of-myself {
+  display: block;
+  margin-top: 0.5rem;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+}

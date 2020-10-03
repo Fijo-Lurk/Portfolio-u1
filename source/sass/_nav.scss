@@ -1,0 +1,26 @@
+.nav-bar {
+  background-color: #1b242f;
+  margin: 0;
+  padding: 0;
+  border-bottom: 3px solid $img-border-color;
+  ul {
+    background-color: #1b242f;
+    height: 3rem;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: lighter;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    color: $highlights;
+  }
+}
