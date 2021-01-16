@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 .nav-bar {
   background-color: #1b242f;
   margin: 0;
@@ -20,15 +22,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   font-weight: lighter;
 }
 
 .nav-bar a {
+  padding: 2rem;
   text-decoration: none;
   color: white;
+  font-family: 'inter';
 }
 
 .nav-bar a:hover {
@@ -135,6 +136,7 @@ main .fas {
 }
 
 main h2 {
+  font-family: "Inter";
   margin: 0;
   padding: 3rem 0 3rem 0;
   text-align: center;
@@ -186,11 +188,14 @@ main h2 {
 }
 
 .about-me h2 {
+  font-weight: 500;
+  font-family: "Inter";
   padding: 0;
   font-size: 2rem;
 }
 
 .about-me p {
+  font-family: "Poppins";
   text-align: center;
   padding-bottom: 2rem;
   padding: 1rem;
@@ -204,142 +209,6 @@ main h2 {
   margin: 0 auto;
   width: 200px;
   height: 200px;
-}
-
-.contact {
-  width: 100%;
-  background-color: #1a1b1d;
-}
-
-.contact h2 {
-  font-size: 1.2rem;
-  padding: 2rem 0 2rem;
-  text-align: center;
-  color: #ffffff;
-  font-weight: lighter;
-  margin: 0rem 0.3rem 0rem 0.3rem;
-}
-
-.contact input {
-  width: 60%;
-  background-color: #333;
-  color: #ffffff;
-  padding: 10px 15px;
-  border: 0;
-  margin-bottom: 3px;
-}
-
-.contact textarea {
-  width: 60%;
-  height: 9rem;
-  background-color: #333;
-  color: white;
-  padding: 10px 15px;
-  border: 0;
-  margin-bottom: 3px;
-  resize: none;
-}
-
-form {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-  padding-bottom: 2rem;
-}
-
-.submit-btn {
-  cursor: pointer;
-}
-
-.submit-btn:hover {
-  background-color: #484848;
-}
-
-#portfolio-parent {
-  max-width: 1400px;
-  height: 800px;
-  margin: 0 auto;
-  margin-bottom: 4rem;
-  display: -ms-grid;
-  display: grid;
-  justify-items: center;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-}
-
-#portfolio-parent img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  -webkit-transition-property: height, width;
-  transition-property: height, width;
-  -webkit-transition-duration: 200ms;
-          transition-duration: 200ms;
-  -webkit-transition-delay: 200ms;
-          transition-delay: 200ms;
-}
-
-#portfolio-parent img:hover {
-  height: 320px;
-  width: 320px;
-}
-
-.visual {
-  display: inline-block;
-}
-
-.visual a {
-  cursor: pointer;
-}
-
-.card {
-  color: rgba(0, 0, 0, 0.789);
-  text-align: center;
-  width: 100%;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  border-radius: 50%;
-  height: 350px;
-}
-
-.card h3 {
-  font-size: 1.7rem;
-  color: white;
-  font-weight: 400;
-  margin: 1rem;
-}
-
-.projects {
-  text-align: center;
-  font-size: 2.5rem;
-  color: white;
-}
-
-.embed-section {
-  margin-bottom: 2rem;
-}
-
-.embed-section div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.embed-section embed {
-  margin: 0 auto;
-  height: 400px;
-  width: 45rem;
-  border: 1px solid black;
-}
-
-.embed-section h3 {
-  font-size: 1.5rem;
-  margin: 0 0.5rem 2rem 0.5rem;
-  text-align: center;
-  color: white;
-  font-weight: 400;
 }
 
 .footer-info {
@@ -396,6 +265,100 @@ form {
   margin: 1rem 0 0 0;
 }
 
+#portfolio-id {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-header {
+  font-size: 2.2em;
+  font-family: "Inter";
+  font-weight: 500;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.portfolio-text {
+  text-align: center;
+  color: white;
+}
+
+.portfolio-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5em;
+}
+
+.portfolio-img {
+  padding: 1rem;
+  width: 450px;
+  border-radius: 25px;
+}
+
+.portfolio {
+  padding: 0;
+  position: relative;
+}
+
+figcaption {
+  height: 222.625px;
+  width: 418px;
+  text-align: center;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 77%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -80%);
+          transform: translate(-50%, -80%);
+  background-color: #141c3a;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 10px;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+figcaption h1 {
+  font-size: 1rem;
+  color: #f0eded;
+  margin: 3rem 0.2rem 0rem 0.2rem;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+figcaption:hover {
+  opacity: 1;
+}
+
+.website-link {
+  font-weight: 600;
+  margin: 0.5rem;
+  padding: 0.8rem;
+  background-color: #04c2c9;
+  border-radius: 25px;
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.btn-container {
+  margin-top: 2rem;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -407,7 +370,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Poppins', 'Inter', sans-serif;
   font-weight: 300;
   line-height: 1.5;
   overflow-x: hidden;
@@ -417,8 +380,8 @@ body {
 /*-----------------@media-----------------------*/
 @media screen and (min-width: 1500px) {
   .nav-bar ul {
-    height: 5rem;
-    font-size: 1.5rem;
+    height: 4rem;
+    font-size: 1rem;
   }
   .header-content h1 {
     font-size: 3.5rem;
@@ -461,10 +424,6 @@ body {
   #portfolio-parent a img:hover {
     width: 220px;
     height: 220px;
-  }
-  .embed-section embed {
-    width: 30rem;
-    height: 400px;
   }
 }
 
@@ -511,9 +470,6 @@ body {
   main .fas {
     font-size: 3rem;
     margin: 0.4rem;
-  }
-  .contact h2 {
-    font-size: 1rem;
   }
   .card h3 {
     font-size: 1.2rem;

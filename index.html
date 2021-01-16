@@ -14,10 +14,7 @@
       src="https://kit.fontawesome.com/b2cc818e3f.js"
       crossorigin="anonymous"
     ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap"
-      rel="stylesheet"
-    />
+  
     <title>Filip Johansson Portfolio</title>
   </head>
   <body>
@@ -32,7 +29,7 @@
         <h2>I'm a full-stack web developer</h2>
         <h2>studying at <span class="highlight">Chas Academy</span></h2>
 
-        <button onclick="window.location.href= '#projects-del';" class="btn">
+        <button onclick="window.location.href= '#portfolio-id';" class="btn">
           View my work
           <i class="fas fa-arrow-down"></i>
         </button>
@@ -46,7 +43,6 @@
         <li><a href="#">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#projects-del">PORTFOLIO</a></li>
-        <li><a href="#contact-footer">CONTACT</a></li>
       </ul>
     </nav>
 
@@ -63,7 +59,7 @@
         />
         <p>
           Hey! My name is Filip Johansson. I'm studying to be a full-stack web
-          developer at Chas academy. I am from a small town called Enköping in
+          developer at Chas academy. I am from Enköping in
           Sweden. My goal is to build world-leading websites for the companies
           of the future. I will do it with my following principles:
         </p>
@@ -87,134 +83,51 @@
       </section>
     </main>
 
-    <!--Portfolio-->
-
-    <header>
-      <h2 id="projects-del" class="projects">PROJECTS</h2>
-    </header>
-
-    <section role="complementary" id="portfolio-parent">
-      <div class="card">
-        <h3>Coffee shop</h3>
-
-        <div class="visual">
-          <a
-            rel="noopener"
-            href="#projects-del"
-            aria-label="read more about my coffe shop project"
-          >
-            <img
-              src="https://images.pexels.com/photos/1070945/pexels-photo-1070945.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-              alt=" link to coffee shop page"
-            />
-          </a>
+    <!--projects-->
+    <section id="portfolio-id">
+      <h2 class="portfolio-text portfolio-header">My Recent Work</h2>
+      <div class="portfolio-container">
+        <div class="portfolio">
+          <img class="portfolio-img" src="/source/img/php-app.png" alt="php app demo">
+          <figcaption class="hvr-rectangle-out">
+           <div>
+            <h1 class="portfolio-text">CRUD to-do application made with: <br> Html, css, php, 
+              MySQL.</h1>
+           </div>
+           <div class="btn-container">
+            <a class="website-link" href="#"  target="_blank">View Website</a>
+            <a class="website-link" href="https://github.com/Fijo-Lurk/u04-todo-app-Fijo-Lurk"  target="_blank">show code</a>
+           </div>
+ 
+          </figcaption>
+        
         </div>
-      </div>
-      <div class="card">
-        <h3>Supermarket</h3>
-
-        <div class="visual">
-          <a
-            rel="noopener"
-            href="#projects-del"
-            aria-label="read more about my supermarket shop project"
-          >
-            <img
-              src="https://images.pexels.com/photos/2733918/pexels-photo-2733918.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-              alt="link to supermarket page"
-            />
-          </a>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Spotify clone</h3>
-
-        <div class="visual">
-          <a
-            rel="noopener"
-            href="#projects-del"
-            aria-label="read more about my musik webpage project"
-          >
-            <img
-              src="https://images.pexels.com/photos/374912/pexels-photo-374912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-              alt="link to musik page"
-            />
-          </a>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Bakery webbpage</h3>
-
-        <div class="visual">
-          <a
-            rel="noopener"
-            href="#projects-del"
-            aria-label="read more about my bakery webpage project"
-          >
-            <img
-              src="https://images.pexels.com/photos/9095/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-              alt="Bakery"
-          /></a>
+        <div class="portfolio">
+          <img class="portfolio-img" src="/source/img/hangman.png" alt="hangman demo app">
+          <figcaption>
+            <div>
+              <h1 class="portfolio-text">Hangman game made with:
+                <br> Html, css, javaScript</h1>
+            </div>
+            <div class="btn-container">
+              <a class="website-link" href="#" target="_blank">View Website</a>
+              <a class="website-link" href="https://github.com/chas-academy/u03-hangman-Fijo-Lurk"  target="_blank">show code</a>
+            </div>
+        
+          </figcaption>
+          
         </div>
       </div>
     </section>
+    
+  
 
-    <!--Embed section-->
-    <section tabindex="0" class="embed-section">
-      <h3>Figma sketch for project <span class="highlight">Portfolio</span></h3>
-      <div>
-        <!--Pdf saved on personal googel drive-->
-        <embed
-          tabindex="0"
-          aria-label="pdf for figma sketch"
-          src="https://drive.google.com/file/d/1SKFloEuC-Sx_G7gA9h40Gl-svJ9SWoc9/preview"
-          type="application/pdf"
-        />
-      </div>
-    </section>
+    
 
     <!--Footer-->
 
     <footer id="contact-footer">
-      <div class="contact">
-        <h2>
-          Have any questions? Or want to get in touch. <br />
-          Contact me here!
-        </h2>
-        <form>
-          <label for="name">
-            <input
-              aria-labelledby="name"
-              id="name"
-              type="text"
-              placeholder="Name"
-              required
-              autocomplete="name"
-            />
-          </label>
-
-          <label for="email">
-            <input
-              type="email"
-              aria-labelledby="email"
-              id="email"
-              placeholder="Enter email"
-              required
-              autocomplete="email"
-            />
-          </label>
-
-          <textarea
-            placeholder="Your message"
-            name="textarea"
-            id="Text-area"
-            required
-            maxlength="500"
-          ></textarea>
-
-          <input class="submit-btn" type="submit" value="Submit" />
-        </form>
-      </div>
+     
 
       <div class="footer-info">
         <ul>

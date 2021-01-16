@@ -13,12 +13,14 @@
     flex-wrap: wrap;
     list-style: none;
     align-items: center;
-    justify-content: space-evenly;
+
     font-weight: lighter;
   }
   a {
+    padding: 2rem;
     text-decoration: none;
     color: white;
+    font-family: 'inter';
   }
   a:hover {
     color: $highlights;

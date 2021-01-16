@@ -1,14 +1,18 @@
-@import "source/variables/_variables.scss";
+@import 'source/variables/_variables.scss';
 
 //layout
-@import "source/Sass/_nav.scss";
-@import "source/sass/header.scss";
-@import "source/sass/about-me.scss";
-@import "source/sass/contact.scss";
-@import "source/sass/portfolio.scss";
-@import "source/sass/_footer.scss";
+@import 'source/Sass/_nav.scss';
+@import 'source/sass/header.scss';
+@import 'source/sass/about-me.scss';
+@import 'source/sass/_footer.scss';
+@import 'source/sass/_projects.scss';
 
 //Variables
+
+//fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 
 * {
   box-sizing: border-box;
@@ -16,9 +20,10 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Poppins', 'Inter', sans-serif;
   font-weight: 300;
   line-height: 1.5;
   overflow-x: hidden;
@@ -29,8 +34,8 @@ body {
 @media screen and (min-width: 1500px) {
   .nav-bar {
     ul {
-      height: 5rem;
-      font-size: 1.5rem;
+      height: 4rem;
+      font-size: 1rem;
     }
   }
   .header-content h1 {
@@ -75,11 +80,6 @@ body {
   #portfolio-parent a img:hover {
     width: 220px;
     height: 220px;
-  }
-
-  .embed-section embed {
-    width: 30rem;
-    height: 400px;
   }
 }
 @media screen and (max-width: 565px) {
@@ -129,9 +129,7 @@ body {
     font-size: 3rem;
     margin: 0.4rem;
   }
-  .contact h2 {
-    font-size: 1rem;
-  }
+
   .card {
     h3 {
       font-size: 1.2rem;
